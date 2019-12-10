@@ -10,7 +10,7 @@ namespace Practice.LeetCode.Tests
         [DataRow("bbbbb", 1)]
         [DataRow("pwwkew", 3)]
         [DataRow(" ", 1)]
-        public void LengthOfLongestSubstringTests(string s, int expected)
+        public void LengthOfLongestSubstringTest(string s, int expected)
         {
             var leetCode = new LeetCode0003();
             var output = leetCode.LengthOfLongestSubstring(s);

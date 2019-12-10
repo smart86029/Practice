@@ -10,7 +10,7 @@ namespace Practice.LeetCode.Tests
         [DataTestMethod]
         [DataRow(new int[] { 2, 4, 3 }, new int[] { 5, 6, 4 }, new int[] { 7, 0, 8 })]
         [DataRow(new int[] { 5 }, new int[] { 5 }, new int[] { 0, 1 })]
-        public void AddTwoNumbersTests(int[] nums1, int[] nums2, int[] expected)
+        public void AddTwoNumbersTest(int[] nums1, int[] nums2, int[] expected)
         {
             var l1 = ToListNode(nums1);
             var l2 = ToListNode(nums2);
