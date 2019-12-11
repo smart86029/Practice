@@ -8,6 +8,7 @@ namespace Practice.LeetCode
     {
         public IList<TreeNode> DelNodes(TreeNode root, int[] to_delete)
         {
+            var toDelete = new HashSet<int>(to_delete);
             var map = new Dictionary<TreeNode, int>();
             var nodes = new Queue<Tuple<TreeNode, TreeNode, bool>>();
             nodes.Enqueue(Tuple.Create(root, default(TreeNode), true));
@@ -21,7 +22,7 @@ namespace Practice.LeetCode
                 if (node == default)
                     continue;
 
-                if (to_delete.Contains(node.val))
+                if (toDelete.Contains(node.val))
                 {
                     map[node] = 2;
                     if (parent != default)
