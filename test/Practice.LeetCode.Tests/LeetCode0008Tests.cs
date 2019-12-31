@@ -12,7 +12,7 @@ namespace Practice.LeetCode.Tests
         [DataRow("words and 987", 0)]
         [DataRow("-91283472332", -2147483648)]
         [DataRow("+1", 1)]
-        public void ConvertTest(string str, int expected)
+        public void MyAtoiTest(string str, int expected)
         {
             var leetCode = new LeetCode0008();
             var output = leetCode.MyAtoi(str);

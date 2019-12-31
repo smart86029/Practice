@@ -9,7 +9,7 @@ namespace Practice.LeetCode.Tests
         [DataRow(121, true)]
         [DataRow(-121, false)]
         [DataRow(10, false)]
-        public void ConvertTest(int x, bool expected)
+        public void IsPalindromeTest(int x, bool expected)
         {
             var leetCode = new LeetCode0009();
             var output = leetCode.IsPalindrome(x);

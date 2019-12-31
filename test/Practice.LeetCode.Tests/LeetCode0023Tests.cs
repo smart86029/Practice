@@ -8,7 +8,7 @@ namespace Practice.LeetCode.Tests
     public class LeetCode0023Tests
     {
         [TestMethod]
-        public void GenerateParenthesisTest()
+        public void MergeKListsTest()
         {
             var lists = new[]
             {

@@ -11,7 +11,7 @@ namespace Practice.LeetCode.Tests
         [DataRow(120, 21)]
         [DataRow(int.MinValue, 0)]
         [DataRow(1534236469, 0)]
-        public void ConvertTest(int x, int expected)
+        public void ReverseTest(int x, int expected)
         {
             var leetCode = new LeetCode0007();
             var output = leetCode.Reverse(x);
