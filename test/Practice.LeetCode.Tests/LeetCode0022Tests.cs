@@ -6,7 +6,6 @@ namespace Practice.LeetCode.Tests
     [TestClass]
     public class LeetCode0022Tests
     {
-        [TestMethod]
         [DataTestMethod]
         [DataRow(new[] { "((()))", "(()())", "(())()", "()(())", "()()()" }, 3)]
         public void GenerateParenthesisTest(string[] expected, int n)
