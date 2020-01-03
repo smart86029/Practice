@@ -14,7 +14,6 @@ namespace Practice.LeetCode.Tests
         {
             var leetCode = new LeetCode0025();
             var output = leetCode.ReverseKGroup(ToListNode(head), k);
-            var a = FromListNode(output);
             CollectionAssert.AreEqual(expected, FromListNode(output));
 
             ListNode ToListNode(int[] nums)
