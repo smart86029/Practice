@@ -8,7 +8,7 @@ namespace Practice.LeetCode.Tests
         [DataTestMethod]
         [DataRow("(()", 2)]
         [DataRow(")()())", 4)]
-        public void NextPermutationTest(string s, int expected)
+        public void LongestValidParenthesesTest(string s, int expected)
         {
             var leetCode = new LeetCode0032();
             var output = leetCode.LongestValidParentheses(s);
