@@ -8,6 +8,7 @@ namespace Practice.LeetCode.Tests
         [DataTestMethod]
         [DataRow(new[] { 1, 2, 5 }, 11, 3)]
         [DataRow(new[] { 2 }, 3, -1)]
+        [DataRow(new[] { 186, 419, 83, 408 }, 3249, 20)]
         public void CoinChangeTest(int[] coins, int amount, int expected)
         {
             var leetCode = new LeetCode0322();
