@@ -4,29 +4,23 @@ public class LeetCode0645
 {
     public int[] FindErrorNums(int[] nums)
     {
-        var count = nums.Length;
-        var records = new int[count];
+        var records = new int[nums.Length + 1];
         var duplicated = 0;
-        var sum = 0;
+        var sumXor = 0;
 
-        for (var i = 0; i < count; i++)
+        for (var i = 0; i < nums.Length; i++)
         {
-            var num = nums[i];
-            sum += num;
-            if (records[num - 1] > 0)
+            sumXor ^= nums[i] ^ (i + 1);
+            if (records[nums[i]] > 0)
             {
-                duplicated = num;
+                duplicated = nums[i];
             }
-            else
-            {
-                records[num - 1]++;
-            }
+
+            records[nums[i]]++;
         }
 
-        var expectedSum = (count + 1) * count / 2;
-        var missed = duplicated + expectedSum - sum;
-        var results = new int[] { duplicated, missed };
+        var missed = sumXor ^ duplicated;
 
-        return results;
+        return new[] { duplicated, missed };
     }
 }
